@@ -1,0 +1,30 @@
+.parent {
+  width: 300px;
+  height: 200px;
+  background-color: red;
+}
+
+.child {
+  width: 100px;
+  height: inherit;
+  background-color: inherit;
+  position: fixed;
+  top: 100px;
+  right: 100px;
+}
+
+
+div { color: red !important;} /* 99999999999999점 */
+#color_yellow { color: yellow;} /* ID 선택자 100점 */
+.color_green {color: green;} /* Class 선택자 10점 */
+div {color: blue;} /* 태그 선택자 1점 */
+* { color: darkblue;} /* 전체 선택자 0점 */
+body { color: violet;} /* 상속 X */
+
+.list li.item { color: red;} /* 21점 */
+.list li:hover { color: red;} /* 21점 */
+.box::before { conent: "Good"; color: red;} /* 11점 */
+#submit span {color: red;} /* 101점 */
+header .menu li:nth-child(2) { color: red;} /* 22점 */
+h1 {color: red;} /* 1점 */
+:not(.box) {color: red;} /* 10점 */
