@@ -20,5 +20,8 @@
   "homepage": "https://github.com/twilight4j/starter#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "axios": "^1.1.3"
   }
 }
